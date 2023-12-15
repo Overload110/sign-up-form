@@ -60,6 +60,7 @@ function validateInputs(){
         setError(confirmPass, "Passwords don't match.");
     }else{
         setSuccess(confirmPass);
+        setSuccess(password);
     }
 }
 
@@ -78,7 +79,7 @@ function setSuccess(element){
 
     errorDisplay.innerText = "";
     inputControl.classList.add('success');
-    inputControl.classList.remove('errror');
+    inputControl.classList.remove('error');
 }
 
 function isValidEmail(email){
