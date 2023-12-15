@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Sign Up</title>
 </head>
 <body>
-    <div id="side-image"></div>
+    <div id="side-image">
+        <div id="logo"><img src="odin-lined.png" alt="Logo">Odin</div>
+    </div>
     <div id="content">
         <div id="description"></div>
         <div id="form-div">
             <form id="form" action="/">
                 <h1>Lets do this!</h1>
+                <div id="name">
                 <div class="input">
                     <label for="first-name">First Name</label>
                     <input id="first-name" name="first-name" type="text" >
@@ -22,7 +26,8 @@
                     <label for="last-name">Last Name</label>
                     <input id="last-name" name="last-name" type="text" >
                     <div class="error"></div>
-                </div>
+                </div></div>
+                <div id="contact">
                 <div class="input">
                     <label for="email">Email</label>
                     <input id="email" name="email" type="email" >
@@ -32,7 +37,8 @@
                     <label for="tel">Phone</label>
                     <input id="tel" name="tel" type="tel" >
                     <div class="error"></div>
-                </div>
+                </div></div>
+                <div id="passwords">
                 <div class="input">
                     <label for="password">Password</label>
                     <input id="password" name="password" type="password" >
@@ -42,7 +48,7 @@
                     <label for="confirm-pass">Confirm Password</label>
                     <input id="confirm-pass" name="confirm-pass" type="password" >
                     <div class="error"></div>
-                </div>
+                </div></div>
                 <div id="submit-button">
                     <button type="submit">Create Account</button>
                     <p>Already have an account? <a href="/">Log In.</a></p>
