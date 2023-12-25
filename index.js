@@ -39,7 +39,7 @@ function validateInputs(){
     }
 
     if(phoneValue === ""){
-        setError(phone, "Email is required.");
+        setError(phone, "Phone number is required.");
     }else if(!isValidPhone(phoneValue)){
         setError(phone, "Please enter a valid phone number.");
     }else{
